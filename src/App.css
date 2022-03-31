@@ -1,38 +1,74 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/gradient-spheres-background_52683-76367.jpg?t=st=1648571399~exp=1648571999~hmac=d80b28a8f3e063baba13ad09992626ffad41d4bcc3782fdaeaa3139d7a80d2e1&w=996);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 .App {
-  text-align: center;
+    background-color: RGBA(195,120,250,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    height: 600px;
+    -webkit-box-shadow: 10px 14px 8px 0px rgba(150, 8, 255, 0.2);
+    -moz-box-shadow: 10px 14px 8px 0px rgba(150, 8, 255, 0.2);
+    box-shadow: 10px 14px 8px 0px rgba(150, 8, 255, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-btn {
+    margin: 50px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 1px solid #940ef3;
+    color: #c378fa;
+    background-color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:hover {
+    background-color: #c378fa;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5mm;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+span {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.container-par {
+    margin-top: 40px;
+}
+
+.container-icon {
+    margin-top: 20px;
+}
+
+@media all and (max-width: 500px) {
+    .App {
+        max-width: 300px;
+    }
 }
